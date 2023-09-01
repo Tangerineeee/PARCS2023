@@ -33,9 +33,9 @@ public class Solver implements AM
 		{
 			BufferedReader in = new BufferedReader(new FileReader(info.curtask.findFile("input.txt")));
 			
-			lt = new Long(in.readLine()).longValue();
-			lv = new Long(in.readLine()).longValue();
-			ln = new Long(in.readLine()).longValue();
+			lt = parseLong(in.readLine());
+			lv = parseLong(in.readLine());
+			ln = parseLong(in.readLine());
 		}
 		catch (IOException e)
 		{
